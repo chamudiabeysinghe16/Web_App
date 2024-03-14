@@ -1,0 +1,65 @@
+.homepage {
+  display: flex;
+  height: 100vh;
+}
+
+.split {
+  width: 50%;
+  position: relative;
+}
+
+.left {
+  background-color: #f0f0f0;
+}
+
+.right {
+  background-color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 80%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.google-login {
+  background-color: #4285F4; /* Google's brand color */
+  margin-top: 10px;
+}
+
+.login-options span {
+  display: block;
+  margin: 20px auto;
+  font-size: 0.9rem;
+}
+
+.register-link {
+  margin-top: 20px;
+}
+
+.register-link a {
+  color: blue;
+  text-decoration: none;
+}
