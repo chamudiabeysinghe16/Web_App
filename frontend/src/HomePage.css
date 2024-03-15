@@ -1,65 +1,84 @@
-.homepage {
+/* HomePage.css */
+.home {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.split {
-  width: 50%;
-  position: relative;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f1f1f1;
 }
 
-.left {
-  background-color: #f0f0f0;
+.nav-links {
+  list-style: none;
+  display: flex;
 }
 
-.right {
-  background-color: white;
+.nav-links li {
+  padding: 0 1rem;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.welcome-section h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.login-section {
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-section h2 {
+  font-size: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.login-form button {
+  padding: 0.5rem;
+  background: red;
+  color: white;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.login-form .divider {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.google-sign-in {
+  background: #4285F4;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+}
+
+.sign-up {
   text-align: center;
 }
 
-input[type="text"],
-input[type="password"] {
-  width: 80%;
-  padding: 15px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-button {
-  width: 80%;
-  padding: 15px;
-  margin-top: 20px;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.google-login {
-  background-color: #4285F4; /* Google's brand color */
-  margin-top: 10px;
-}
-
-.login-options span {
-  display: block;
-  margin: 20px auto;
-  font-size: 0.9rem;
-}
-
-.register-link {
-  margin-top: 20px;
-}
-
-.register-link a {
-  color: blue;
-  text-decoration: none;
-}
+/* Add additional styles for the layout, colors, typography as per your design */

@@ -1,35 +1,44 @@
 import React from 'react';
-import './HomePage.css'; // Make sure the CSS file is in the same directory as this JS file
+import './HomePage.css'; // Make sure to import the CSS file
 
 function HomePage() {
   return (
     <div className="home">
-      <nav className="home__nav">
-        <div className="nav__section">
-          <a href="#home" className="nav__link active">HOME</a>
-          <a href="#register" className="nav__link">Register</a>
-        </div>
-      </nav>
-      <main className="home__main">
-        <section className="main__welcome">
+      <header>
+        <nav>
+          <div className="logo">LOGO</div>
+          <ul className="nav-links">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/register">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div className="main-content">
+        <div className="welcome-section">
           <h1>Welcome to our website</h1>
-        </section>
-        <section className="main__login">
+        </div>
+
+        <div className="login-section">
           <h2>Hello! Welcome back.</h2>
           <p>Log in with your data that you entered during your registration.</p>
-          <form className="login__form">
-            <input type="email" placeholder="Email address" />
-            <input type="password" placeholder="Password" />
-            <a href="#forgot" className="form__forgot">Forgot Password</a>
-            <button type="submit" className="form__submit">Start now!</button>
+          
+          <form className="login-form">
+            <input type="email" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Start now!</button>
+            <a href="/forgot-password">Forgot Password</a>
+
+            <div className="divider">OR</div>
+            
+            <button className="google-sign-in">Sign in with Google</button>
           </form>
-          <div className="login__or">OR</div>
-          <button className="login__google">Sign in with Google</button>
-          <p className="login__signup">
-            Don't have an account? <a href="#signup">Sign up</a>
-          </p>
-        </section>
-      </main>
+          
+          <div className="sign-up">
+            Don't have an account? <a href="/signup">Sign up</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
